@@ -1,0 +1,52 @@
+<!-- default above after -->
+<div>
+    <span matBadge="6">Notifications</span>
+</div>
+
+<!--positioning-->
+<div>
+    <span matBadge="6" matBadgePosition="below before">Notifications</span>
+</div>
+<div>
+    <span matBadge="6" matBadgePosition="below after">Notifications</span>
+</div>
+<div>
+    <span matBadge="6" matBadgePosition="above before">Notifications</span>
+</div>
+
+<!--sizing-->
+<div>
+    <span matBadge="6" matBadgeSize="small">Notifications</span>
+</div>
+<div>
+    <span matBadge="6" matBadgeSize="medium">Notifications</span>
+</div>
+<div>
+    <span matBadge="6" matBadgeSize="large">Notifications</span>
+</div>
+
+<!--colors-->
+<div>
+    <span matBadge="6" matBadgeColor="primary">Notifications</span>
+</div>
+<div>
+    <span matBadge="6" matBadgeColor="accent">Notifications</span>
+</div>
+<div>
+    <span matBadge="6" matBadgeColor="warn">Notifications</span>
+</div>
+
+<!--overlap-->
+<div>
+    <span matBadge="6" matBadgeOverlap="false">Notifications</span>
+</div>
+
+<!--property biding-->
+<div>
+    <span [matBadge]="notifications" matBadgeOverlap="false">Notifications</span>
+</div>
+
+<!--property biding with hidden-->
+<div>
+    <span [matBadge]="notifications" [matBadgeHidden]="notifications == 0" matBadgeOverlap="false">Notifications</span>
+</div>

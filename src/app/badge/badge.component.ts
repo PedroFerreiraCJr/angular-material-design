@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./badge.component.css']
 })
 export class BadgeComponent implements OnInit {
-
+  
+  notifications: number = 2
+  
   constructor() { }
 
   ngOnInit(): void {
