@@ -12,4 +12,8 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showAlert(event): void {
+    console.log(event.target);
+  }
+
 }
