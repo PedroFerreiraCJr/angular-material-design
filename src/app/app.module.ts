@@ -6,10 +6,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
+import { ExpasionPanelComponent } from './expasion-panel/expasion-panel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExpasionPanelComponent
   ],
   imports: [
     BrowserModule,
