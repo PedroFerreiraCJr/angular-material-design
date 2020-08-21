@@ -6,10 +6,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
+import { GridListComponent } from './grid-list/grid-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GridListComponent
   ],
   imports: [
     BrowserModule,
