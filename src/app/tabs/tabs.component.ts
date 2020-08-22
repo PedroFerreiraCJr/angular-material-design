@@ -12,4 +12,7 @@ export class TabsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  tabChanged(tabIndex: number): void {
+    console.log(tabIndex);
+  }
 }
