@@ -1,0 +1,44 @@
+<!-- horizontal non sequential stepper -->
+<mat-horizontal-stepper>
+    <mat-step label="Shipping Address">
+        <p>Place your information here.</p>
+    </mat-step>
+    <mat-step label="Billing Address">
+        <p>Place your information here.</p>
+        <button mat-button matStepperPrevious>Previous</button>
+        <button mat-button matStepperNext>Next</button>
+    </mat-step>
+    <mat-step label="Place Order">
+        <p>Order Details.</p>
+    </mat-step>
+</mat-horizontal-stepper>
+
+<!-- horizontal sequential stepper -->
+<mat-horizontal-stepper linear>
+    <mat-step label="Shipping Address" [completed]="statusStep1">
+        <p>Place your information here.</p>
+        <button mat-stroked-button (click)="completeStep1()">Complete</button>
+    </mat-step>
+    <mat-step label="Billing Address" [completed]="statusStep2" optional>
+        <p>Place your information here.</p>
+        <button mat-stroked-button (click)="completeStep2()">Complete</button>
+    </mat-step>
+    <mat-step label="Place Order" completed="false">
+        <p>Order Details.</p>
+    </mat-step>
+</mat-horizontal-stepper>
+
+<!-- vertical non sequential stepper -->
+<mat-vertical-stepper>
+    <mat-step label="Shipping Address">
+        <p>Place your information here.</p>
+    </mat-step>
+    <mat-step label="Billing Address">
+        <p>Place your information here.</p>
+        <button mat-button matStepperPrevious>Previous</button>
+        <button mat-button matStepperNext>Next</button>
+    </mat-step>
+    <mat-step label="Place Order">
+        <p>Order Details.</p>
+    </mat-step>
+</mat-vertical-stepper>

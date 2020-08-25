@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatButtonModule } from '@angular/material/button';
 
 const material = [
-  MatStepperModule
+  MatStepperModule,
+  MatButtonModule
 ];
 
 @NgModule({
