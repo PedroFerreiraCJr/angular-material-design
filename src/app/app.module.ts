@@ -6,10 +6,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
+import { TooltipsComponent } from './tooltips/tooltips.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TooltipsComponent
   ],
   imports: [
     BrowserModule,
